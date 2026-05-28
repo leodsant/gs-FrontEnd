@@ -1,7 +1,7 @@
 :root {
   --primary-color: #00BBFF;
   --secondary-color: rgba(0, 101, 138, 0.25);
-  --neutral-color: #CCCCCC;
+  --neutral-color: #868686;
   --bg-color: #1C1C1C;
   --bg-alt-color: #141414;
   --transition: 0.3s ease-in-out;
@@ -38,6 +38,7 @@ nav {
   padding-inline: 32px;
   transition: var(--transition);
   z-index: 50;
+  top: 0;
 }
 
 .navbar-blur {
@@ -54,7 +55,41 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
+main {
+  position: relative;
+}
 
+.menu {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  padding-inline: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 32px;
+}
+
+
+.menu-item {
+  display: flex;
+  color: var(--neutral-color);
+  gap: 128px;
+  text-transform: uppercase;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.menu-item:hover {
+  color: white;
+}
 
 .container {
   height: 100vh;
@@ -136,6 +171,7 @@ nav a:hover {
     transform: translateY(-20px);
   }
 }
+
 
 #satelite {
   width: 570px;
