@@ -3,6 +3,7 @@
   --secondary-color: rgba(0, 101, 138, 0.25);
   --neutral-color: #CCCCCC;
   --bg-color: #1C1C1C;
+  --bg-alt-color: #141414;
   --transition: 0.3s ease-in-out;
 }
 
@@ -58,6 +59,10 @@ nav a:hover {
 .container {
   height: 100vh;
   width: 100%;
+}
+
+.container--alt {
+  background-color: var(--bg-alt-color);
 }
 
 #home {
@@ -169,11 +174,20 @@ nav a:hover {
   font-size: 20px;
 }
 
-.conteudo {
+.conteudo-problema {
   display: flex;
   flex-direction: column;
-  gap: 80px;  
+  gap: 80px;
   margin: 150px;
+}
+
+.conteudo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 150px;
+  gap: 32px;
 }
 
 .problema-header {
@@ -199,4 +213,47 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+#tecnologia {
+  color: white;
+}
+
+.tech-grid {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.tech-card {
+  flex: 1 1 calc(50% - 16px);
+  border: solid 2px var(--primary-color);
+  border-radius: 16px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.tech-card:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-6px);
+}
+
+.tech-card__icon {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+.tech-card h2 {
+  font-family: "Michroma", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.tech-card p {
+  font-size: 16px;
+  color: var(--neutral-color);
+  line-height: 1.7;
 }
