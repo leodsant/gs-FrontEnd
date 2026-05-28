@@ -349,3 +349,42 @@ main {
   color: var(--neutral-color);
   line-height: 1.6;
 }
+
+#publico {
+  color: white;
+}
+
+.card--pub {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 1 calc(50% - 64px);
+}
+
+.card-pub__icon {
+  width: 56px;
+  height: 56px;
+  border: solid 2px var(--primary-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card--pub h2 {
+  font-family: "Michroma", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.card--pub p {
+  font-size: 16px;
+  color: var(--neutral-color);
+  line-height: 1.7;
+}
+
+.card--pub:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-6px);
+  transition: background-color var(--transition), transform var(--transition);
+}
