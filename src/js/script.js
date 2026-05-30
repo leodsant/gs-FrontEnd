@@ -6,3 +6,9 @@ window.addEventListener('scroll', function() {
     navbar.classList.remove('navbar-blur');
   }
 });
+
+document.querySelectorAll('.menu-item').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('menu-toggle').checked = false;
+  });
+});

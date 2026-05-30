@@ -28,3 +28,19 @@ window.addEventListener('scroll', function() {
 }
 
 }
+
+
+
+
+
+prompt: como eu posso fazer para quando clicar em algum dos links do menu, ele fechar
+
+resultado: {
+
+document.querySelectorAll('.menu-item').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('menu-toggle').checked = false;
+  });
+});
+
+}

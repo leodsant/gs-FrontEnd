@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LinkEdge - Rede Mesh</title>
+  <link rel="icon" href="./src/assets/imgs/logo.png">
   <link rel="stylesheet" href="./src/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,36 +18,37 @@
 <body>
   <main>
 
+    
     <header class="navbar">
       <nav>
         <h1><span style="color: var(--primary-color);">Link</span>Edge</h1>
-        <a id="menu-open" style="color: inherit;" href=""><i class="fa-solid fa-bars fa-2xl"></i></a>
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
       </nav>
     </header>
-
+    
     <div id="home" class="container">
       <div class="hero">
         <h1>O espaço como ponte de emergência</h1>
         <p>Rede mesh satelital que conecta regiões isoladas quando a infraestrutura terrestre falha.</p>
         <div class="buttons">
-          <a id="conheca" href="">
+          <a id="conheca" href="#problema">
             <span>conheça o projeto</span>
           </a>
-          <a id="aplicacao" href="">
+          <a id="aplicacao" href="#sec-aplicacao">
             <span>ver aplicação</span>
           </a>
         </div>
       </div>
-
+      
       <img id="satelite" src="./src/assets/imgs/satelite.png" alt="Modelo 3D de um satélite artificial. O corpo principal é retangular e revestido por uma manta dourada reflexiva, com dois grandes painéis solares azuis estendidos nas laterais, uma antena parabólica cinza no topo e um componente verde na lateral.">
+      
+      <input type="checkbox" id="menu-toggle">
 
-      <!-- <div class="menu container">
-        <div class="navbar">
-          <nav>
-            <h1><span style="color: var(--primary-color);">Link</span>Edge</h1>
-            <a id="menu-close" style="color: inherit;" href=""><svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.775 460.775" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path> </g></svg></a>
-          </nav>
-        </div>
+      <div class="menu">
         
         <div class="menu-items">
           <a class="menu-item" href="#problema">
@@ -61,20 +63,20 @@
             <h1>03</h1>
             <h1 style="font-size: 50px;">Objetivos</h1>
           </a>
-          <a class="menu-item" href="#">
+          <a class="menu-item" href="#publico">
             <h1>04</h1>
             <h1 style="font-size: 50px;">Público-alvo</h1>
           </a>
-          <a class="menu-item" href="#">
+          <a class="menu-item" href="#beneficios">
             <h1>05</h1>
             <h1 style="font-size: 50px;">Benefícios</h1>
           </a>
-          <a class="menu-item" href="#">
+          <a class="menu-item" href="#sec-aplicacao">
             <h1>06</h1>
-            <h1 style="font-size: 50px;">Dia a Dia</h1>
+            <h1 style="font-size: 50px;">Aplicação</h1>
           </a>
         </div>
-    </div> -->
+    </div>
 
     </div>
 
@@ -351,9 +353,9 @@
       <div class="footer-team">
         <p class="footer-team__label">Equipe</p>
         <ul>
-          <li>KAIO HIROKI KINOSHITA · RM 569127</li>
-          <li>LEONARDO DANIEL DOS SANTOS · RM 571092</li>
-          <li>MATHEUS DIONISIO CINTRA · RM 569844</li>
+          <li>KAIO · RM 569127</li>
+          <li>LEONARDO · RM 571092</li>
+          <li>MATHEUS · RM 569844</li>
         </ul>
       </div>
     </div>
