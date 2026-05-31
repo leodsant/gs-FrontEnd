@@ -1,4 +1,8 @@
 @media (max-width: 48rem) {
+
+  html {
+    background-color: var(--bg-alt-color);
+  }
  
   nav {
     height: 100px;
@@ -37,7 +41,7 @@
   }
  
   #satelite {
-    width: 50%;
+    width: 100%;
     height: auto;
   }
  
