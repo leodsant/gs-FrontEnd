@@ -37,8 +37,7 @@
   }
  
   #satelite {
-    width: 100%;
-    max-width: 420px;
+    width: 50%;
     height: auto;
   }
  
@@ -151,6 +150,10 @@
 }
 
 @media (max-width: 40rem) {
+
+  html {
+    background-color: var(--bg-alt-color);
+  }
  
   nav {
     height: 72px;
@@ -201,27 +204,8 @@
   }
  
   .banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    height: auto;
-    padding: 0;
-  }
- 
-  .banner-item {
-    padding: 20px 16px;
-    border-right: 1px solid rgba(0,0,0,0.15);
-    border-bottom: 1px solid rgba(0,0,0,0.15);
-    gap: 6px;
-  }
- 
-  .banner-item:nth-child(even) {
-    border-right: none;
-  }
- 
-  .banner-item:nth-child(3),
-  .banner-item:nth-child(4) {
-    border-bottom: none;
+    display: flex;
+    padding: 8px;
   }
  
   .banner h1 {
@@ -233,8 +217,13 @@
   }
  
   .conteudo {
-    margin: 40px 16px;
-    gap: 32px;
+    padding: 0;
+  }
+
+  .conteudo-problema {
+    margin-inline: 16px;
+    margin-block: 32px;
+    gap: auto;
   }
  
   .problema-header {
@@ -246,7 +235,7 @@
   .problema-header > div {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     gap: 12px;
     text-align: left !important;
   }
